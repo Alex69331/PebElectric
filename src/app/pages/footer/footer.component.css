@@ -1,0 +1,112 @@
+.footer {
+  border: 0.1px solid rgb(195, 195, 195);
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: grey;
+  background-color: white;
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  justify-content: space-around;
+  line-height: 2rem;
+  display: flex;
+  min-height: 250px;
+}
+.footer-details {
+  padding: 2rem 2rem 1rem 0rem;
+  text-align: left;
+}
+h1 {
+  color: black;
+  margin-bottom: 1rem;
+  font-size: 24px;
+  font-weight: 500;
+}
+h2,
+p {
+  font-size: 16px;
+}
+h3 {
+  font-weight: 100;
+  font-size: 14px;
+}
+hr {
+  border: 0.1px solid rgb(230, 230, 230);
+  margin: 0 1rem;
+}
+a {
+  color: gray;
+}
+.socialDiv {
+  padding: 2rem 2rem 1rem 0rem;
+  text-align: center;
+}
+.socialLinks {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+}
+.facebookImg {
+  margin-right: 2rem;
+}
+.anpc {
+  margin-left: 2px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.anpcDiv {
+  text-align: center;
+  align-items: center;
+}
+.aboutUs {
+  padding: 2rem 1rem 1rem 0rem;
+  text-align: left;
+  text-wrap: wrap;
+  max-width: 400px;
+}
+.copyright {
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+.copyright h3 {
+  font-size: 14px;
+  color: gray;
+  font-weight: 100;
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .socialDiv {
+    padding: 2rem 0;
+  }
+  .aboutUs {
+    max-width: 300px;
+  }
+}
+@media (max-width: 900px) {
+  hr {
+    width: 100%;
+  }
+  .aboutUs {
+    max-width: 500px;
+  }
+  .footer {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .socialDiv {
+    margin-top: 2rem;
+  }
+  .aboutUs {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}

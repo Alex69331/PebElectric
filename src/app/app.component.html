@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/favicon-16x16.png" type="image/png" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <img class="logo" src="/assets/images/logo.jpg" />
+        <img
+          class="menu-bar"
+          src="/assets/images/menu-bar_4849134.png"
+          alt="meniu"
+          (click)="toggleMenu()"
+        />
+
+        <div class="web-menu">
+          <a routerLink="/" routerLinkActive="active" class="item">Acasa</a>
+          <a routerLink="/galerie" routerLinkActive="active" class="item"
+            >Galerie</a
+          >
+          <a routerLink="/despre-noi" routerLinkActive="active" class="item"
+            >Despre noi</a
+          >
+          <a routerLink="/contact" routerLinkActive="active" class="item"
+            >Contact</a
+          >
+        </div>
+        <div class="mobile-menu" [ngClass]="{ open: menuOpen }">
+          <a routerLink="/" routerLinkActive="active" class="item">Acasa</a>
+          <a routerLink="/galerie" routerLinkActive="active" class="item"
+            >Galerie</a
+          >
+          <a routerLink="/despre-noi" routerLinkActive="active" class="item"
+            >Despre noi</a
+          >
+          <a routerLink="/contact" routerLinkActive="active" class="item"
+            >Contact</a
+          >
+        </div>
+      </div>
+
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+
+      <app-footer></app-footer>
+    </div>
+  </body>
+</html>

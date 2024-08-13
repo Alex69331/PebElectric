@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie</title>
+  </head>
+  <body>
+    <h1>Galerie</h1>
+    <div class="gallery">
+      <img
+        *ngFor="let image of images; let i = index"
+        [src]="image"
+        alt="Image {{ i + 1 }}"
+        (click)="openImage(i)"
+        class="thumbnail"
+      />
+    </div>
+
+    <div class="videoDiv">
+      <video class="video" controls>
+        <source
+          src="assets/images/VIDEO-2022-06-11-10-02-47-l4qxp2cm.mp4"
+          type="video/mp4"
+          alt="videoLucrare"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <hr />
+    <div class="infoGalerie">
+      <p>
+        <b>PEB Electric</b> are în echipă ingineri/electricieni cu o experiență
+        în domeniu îndelungata,suntem dispuși să lucrăm la proiecte complexe
+        atât pe partea de execuție cât și pe partea de proiectare.
+      </p>
+      <button
+        class="contact"
+        onclick="window.location.href='mailto:office@pebelectric.ro?subject=Inquiry&body=Hello,%20I%20would%20like%20more%20information%20about...'"
+      >
+        Contactează-ne
+      </button>
+      <a href="tel:+40752067782">
+        <button class="contact">Apelează-ne</button>
+      </a>
+    </div>
+
+    <div
+      class="dialog"
+      *ngIf="selectedImageIndex !== null"
+      (click)="closeImage()"
+    >
+      <button class="prev" (click)="prevImage($event)">&#10094;</button>
+      <img
+        [src]="images[selectedImageIndex]"
+        class="full-size-image"
+        alt="Full-size image"
+      />
+      <button class="next" (click)="nextImage($event)">&#10095;</button>
+    </div>
+  </body>
+</html>

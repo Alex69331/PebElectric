@@ -1,0 +1,239 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+
+  background-color: hsl(210, 10%, 96%);
+}
+.despre-noi {
+  padding-top: 3rem;
+  background-color: hsl(210, 10%, 96%);
+}
+.text {
+  margin-bottom: 3rem;
+}
+.despre-pagina .despre-noi {
+  display: flex;
+  flex-direction: column;
+}
+.atestatInfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  margin: auto;
+  height: 100%;
+}
+.atestatInfo li {
+  text-wrap: wrap;
+  color: rgb(88, 88, 88);
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.info {
+  height: 100%;
+  max-width: 500px;
+  padding-left: 3rem;
+}
+.info h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.info h3 {
+  margin-bottom: 10px;
+  color: rgb(83, 83, 83);
+  font-size: 18px;
+}
+.despreDiv1 {
+  background-color: rgb(252, 198, 3);
+  padding: 2rem;
+  border-radius: 15px;
+}
+.despreDiv2 {
+  background-color: rgb(58, 205, 234);
+  padding: 2rem;
+  border-radius: 15px;
+}
+.despreDiv3 {
+  background-color: orange;
+  padding: 2rem;
+  border-radius: 15px;
+}
+.despre-noi {
+  display: flex;
+  line-height: 1.5rem;
+  justify-content: center;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.despre-noi p {
+  margin: auto;
+  max-width: 300px;
+}
+.despre-noi h1 {
+  margin-bottom: 1rem;
+}
+.serviciiH1 {
+  margin-bottom: 3rem;
+}
+.despre-pagina {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.impamantare {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+.servicii {
+  padding: 0 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+.serviciu {
+  flex: 0 1 400px;
+  padding: 2rem;
+}
+.serviciu h1 {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+.serviciu li {
+  color: gray;
+  text-wrap: wrap;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+hr {
+  margin-bottom: 2rem;
+}
+.detaliiNoi {
+  text-align: left;
+  padding: 0 2rem 2rem;
+}
+.detaliiNoi p {
+  color: gray;
+}
+.detalii-ingineri p {
+  color: gray;
+  max-width: 350px;
+  line-height: 1.5rem;
+  margin-top: 1rem;
+}
+.detalii-ingineri {
+  display: flex;
+  margin-top: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.detalii-ingineri div {
+  box-sizing: border-box;
+  text-align: left;
+  flex: 1;
+  max-width: 400px;
+  margin: 20px;
+}
+.contact {
+  margin: 1rem 1rem 2rem 0;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+  padding: 1rem;
+  width: 150px;
+  transition: 0.5s;
+}
+.contact:active {
+  transform: scale(0.9);
+  background-color: hsl(0, 0%, 96%);
+  color: black;
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+  .detalii-ingineri div {
+    height: 330px;
+    flex: 1;
+    max-width: 250px;
+    margin: 5px;
+  }
+  .atestatInfo {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .info h3 {
+    margin-bottom: 0;
+    text-wrap: wrap;
+    overflow: hidden;
+  }
+  .atestatInfo img {
+    width: 100%;
+    padding: 0 4rem;
+  }
+  .info {
+    padding-left: 0px;
+    padding: 5rem;
+    max-width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .atestatInfo img {
+    width: 100%;
+  }
+  .atestatInfo {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .atestatInfo li {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3px;
+  }
+  .info {
+    text-wrap: wrap;
+    max-width: 100%;
+    margin-left: 0;
+    padding: 2rem;
+  }
+  .info h1 {
+    margin-top: 3rem;
+  }
+  .detalii-ingineri {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detalii-ingineri div {
+    text-align: left;
+    flex: 1;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .servicii {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .serviciu {
+    flex: 0 1 100px;
+    padding: 2rem;
+  }
+  .servicii ul {
+    max-width: 300px;
+  }
+}
