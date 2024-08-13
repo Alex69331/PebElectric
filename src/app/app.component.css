@@ -83,4 +83,7 @@ body {
   .mobile-menu.open {
     display: flex;
   }
+  .logo {
+    margin-left: 2rem;
+  }
 }

@@ -103,7 +103,7 @@ a {
     flex-direction: column;
   }
   .socialDiv {
-    margin-top: 2rem;
+    scroll-padding: 2rem 1rem;
   }
   .aboutUs {
     margin-top: 2rem;
