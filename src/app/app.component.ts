@@ -20,4 +20,11 @@ export class AppComponent {
   closeMenu() {
     this.menuOpen = false;
   }
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const clickedInside = (event.target as HTMLElement).closest('.menu');
+    if (!clickedInside && this.menuOpen) {
+      this.menuOpen = false;
+    }
+  }
 }
