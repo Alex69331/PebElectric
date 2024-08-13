@@ -37,13 +37,25 @@
         </div>
         <div class="mobile-menu" [ngClass]="{ open: menuOpen }">
           <a routerLink="/" routerLinkActive="active" class="item">Acasa</a>
-          <a routerLink="/galerie" routerLinkActive="active" class="item"
+          <a
+            routerLink="/galerie"
+            routerLinkActive="active"
+            class="item"
+            (click)="closeMenu()"
             >Galerie</a
           >
-          <a routerLink="/despre-noi" routerLinkActive="active" class="item"
+          <a
+            routerLink="/despre-noi"
+            routerLinkActive="active"
+            class="item"
+            (click)="closeMenu()"
             >Despre noi</a
           >
-          <a routerLink="/contact" routerLinkActive="active" class="item"
+          <a
+            routerLink="/contact"
+            routerLinkActive="active"
+            class="item"
+            (click)="closeMenu()"
             >Contact</a
           >
         </div>
